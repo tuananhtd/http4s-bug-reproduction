@@ -2,3 +2,5 @@ run
 clean
 run
 git status
+run
+ls

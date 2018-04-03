@@ -60,7 +60,7 @@ object SgwClient {
   }
 }
 
-object Hello extends App with Sgw {
+object Hello extends App with Localhost {
 
   import SgwClient._
   import SgwClient.circe._
@@ -91,9 +91,9 @@ object Hello extends App with Sgw {
             port = Some(port)
           )
         ),
-        path = "/sync_gateway/_bulk_get"
+        path = ""
       )
-    ).withBody(body2)
+    ).withBody(body)
 
     _ = println("here")
 
